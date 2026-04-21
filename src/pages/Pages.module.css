@@ -1,0 +1,279 @@
+.hero {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: #1e3a8a;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.searchBar {
+    margin-bottom: 2rem;
+}
+
+.aboutContent {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.aboutContent h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.detailCard {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detailHeader {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.detailHeader h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.detailMeta {
+    color: #6b7280;
+    display: flex;
+    gap: 1rem;
+}
+
+.detailBody {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 3rem;
+}
+
+.commentsSection {
+    margin-top: 4rem;
+}
+
+.commentCard {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #3b82f6;
+    background-color: #f9fafb;
+}
+
+.commentName {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.commentEmail {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-family: inherit;
+    font-size: 1rem;
+    min-height: 200px;
+    resize: vertical;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.aboutContent h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.aboutContent h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e40af;
+    position: relative;
+}
+
+.aboutContent p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.aboutContent ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.aboutContent li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.aboutContent li::marker {
+    color: #3b82f6;
+}
+
+.aboutContent strong {
+    color: #111827;
+}
+
+.aboutContent:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+/* Card container (enhanced) */
+.detailCard {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 32px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.detailCard:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.detailHeader {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.detailHeader h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.detailHeader p {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* Form spacing */
+.formGroup {
+    margin-bottom: 1.75rem;
+}
+
+/* Labels */
+.label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+/* Input (if your Input component allows className, apply it) */
+.input {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Textarea (improved) */
+.textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 0.6rem;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 180px;
+    resize: vertical;
+    transition: all 0.2s ease;
+    background: #fafafa;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Buttons container */
+.formActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Optional: primary button enhancement (if not already styled) */
+button[type="submit"] {
+    font-weight: 600;
+}
+
+/* Disabled state polish */
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

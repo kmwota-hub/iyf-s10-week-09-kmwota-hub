@@ -1,0 +1,113 @@
+/* Layout */
+.postList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    padding: 32px;
+}
+
+/* Card */
+.postCard {
+    position: relative;
+    padding: 22px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #eef0f3;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.postCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+    border-color: #e2e8f0;
+}
+
+/* Subtle top accent */
+.postCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #6366f1, #3b82f6);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* Title */
+.postTitle {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+}
+
+/* Body */
+.postBody {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.7;
+
+    /* Clean truncation */
+    display: -webkit-box;
+    -webkit-linne-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Footer */
+.postFooter {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Like button */
+.likeButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.likeButton:hover {
+    background: #fee2e2;
+    color: #dc2626;
+    border-color: #fecaca;
+    transform: scale(1.05);
+}
+
+/* Liked state */
+.liked {
+    background: #fee2e2;
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+/* Loading / Error */
+.loading,
+.error {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: 500;
+}
